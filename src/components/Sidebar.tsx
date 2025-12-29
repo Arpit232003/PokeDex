@@ -26,11 +26,6 @@ const SIDEBAR_MENU =[
     title: "Search Pokemon",
     url: "/search",
     icon: SearchIcon,
-  },
-  {
-    title: "Pokemon",
-    url: "/pokemon",
-    icon: EggIcon,
   }
 ]
 const MainSidebar = () => {
@@ -42,13 +37,15 @@ const MainSidebar = () => {
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>
-            <img src={"./pokedex_logo.png"} style={{width:"25px"}}/>
-            PokeDex
+            <div className="text-center flex item-center justify-center w-full gap-4">
+                <img src={"./pokedex_logo.png"} style={{width:"30px"}}/>
+                <span className="text-xl font-bold">Pokedex</span>
+            </div>
           </SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="mt-5">
               {SIDEBAR_MENU.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.title} className="mt-5">
                   <SidebarMenuButton asChild>
                     <NavLink to={item.url}>
                       <item.icon />

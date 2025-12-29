@@ -7,7 +7,6 @@ const Search = () => {
 
     return(
         <>
-        <MainSidebar />
         </>
     )
 }
