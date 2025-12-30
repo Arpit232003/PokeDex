@@ -32,6 +32,9 @@ const Home = () => {
                             })}
                         </HeroTitle>
                     </HeroCard>
+                    // Ref for designs: https://dribbble.com/shots/6175056-Pok-dex
+                    //ref FIGMA : https://www.figma.com/community/file/1408359114495724061/pokedex-a-pokedex-website-design
+                    //yet another ref: https://medium.com/@Skaoi/designing-a-pok%C3%A9mon-application-wireframes-ui-and-prototype-9cc6ec4de477
             }
         </>
     )
