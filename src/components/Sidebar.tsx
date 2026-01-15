@@ -32,7 +32,6 @@ const MainSidebar = () => {
 
 
   return (
-    <SidebarProvider>
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
@@ -59,7 +58,6 @@ const MainSidebar = () => {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-    </SidebarProvider>
   )
 }
 
